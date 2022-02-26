@@ -1,0 +1,28 @@
+.container {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.text {
+  color: var(--black);
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.text:hover{
+    color: var(--orange);
+}
+.description {
+  font-size: 1.2rem;
+  color: var(--lightBlack);
+ width: 70%;
+ margin: auto;
+ line-height: 1.5;
+ margin-bottom: 1.5rem;
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,85 @@
+.container {
+  display: flex;
+  padding: 2rem;
+}
+.left {
+  flex: 2;
+}
+.right {
+  flex: 1;
+}
+.table {
+  width: 100%;
+  border-spacing: 1rem;
+}
+.imgContainer {
+  position: relative;
+  width: 6rem;
+  height: 6rem;
+  left: 0.6rem;
+}
+.name {
+  color: var(--orange);
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.total {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.tr {
+  font-size: 1.2rem;
+}
+.card {
+  background: var(--lightBlack);
+  color: var(--white);
+  padding: 1rem 3.5rem;
+  max-width: 85%;
+  border-radius: 0.5rem;
+  box-shadow:   4px 3px 9px var(--orange);
+}
+.cardHeader {
+  text-transform: uppercase;
+}
+.cardItem {
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin: 0.2rem;
+}
+.span {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.cardButton {
+  margin: 1rem 0;
+  width: 100%;
+  text-transform: uppercase;
+  color: var(--orange);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 0.4rem 0;
+  cursor: pointer;
+}
+.cardButton:hover{
+    letter-spacing: 1px;
+
+}
+
+@media screen and (max-width:480px) {
+  .container {
+flex-direction: column;
+  }
+  .card {
+    background: var(--lightBlack);
+    color: var(--white);
+    padding: 1rem 2.5rem;
+    max-width: 100%;
+    border-radius: 0.5rem;
+    box-shadow:   4px 3px 9px var(--orange);
+  }
+  .table {
+    display: none;
+  }
+}

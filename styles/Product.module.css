@@ -1,0 +1,124 @@
+.container {
+  height: calc(100vh - 100px);
+  display: flex;
+}
+.left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right {
+  flex: 1;
+  padding-top: 0.5rem;
+}
+.imgContainer {
+  height: 80%;
+  width: 80%;
+  position: relative;
+}
+.imgContainer:hover {
+  height: 90%;
+  width: 90%;
+  transition: 1s;
+  background-color: var(--boz);
+  border-radius: 2rem;
+}
+.price {
+  color: var(--orange);
+  font-size: 2rem;
+  font-weight: 700;
+  border-bottom: 2px solid var(--black);
+  padding: 0.3rem;
+}
+.desc {
+  width: 85%;
+}
+.desc:hover {
+  background-color: var(--orange);
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--white);
+}
+.sizes {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.size {
+  position: relative;
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
+}
+.size:nth-child(2) {
+  height: 4rem;
+  width: 4rem;
+}
+.size:last-child {
+  height: 4.5rem;
+  width: 4.5rem;
+}
+.number {
+  background: rgb(36, 0, 238);
+  color: var(--white);
+  padding: 2px 8px;
+  border-radius: 20px 10px;
+  position: relative;
+  left: 25px;
+  top: -5px;
+}
+.size:hover .number {
+  background-color: var(--orange);
+}
+.add {
+  margin-top: 1rem;
+}
+.quantity {
+  width: 50px;
+  height: 30px;
+  margin-right: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border: 1px solid var(--black);
+}
+.button {
+  background: var(--orange);
+  height: 30px;
+  color: var(--white);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+  .imgContainer {
+    margin-top: 1rem;
+    width: 70vw;
+    height: 70vw;
+  }
+  .imgContainer:hover {
+    height: 70vw;
+    width: 70vw;
+    background-color: var(--white);
+    border-radius: 0;
+  }
+  .desc {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .sizes {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .add {
+    margin-bottom: 1rem;
+  }
+}

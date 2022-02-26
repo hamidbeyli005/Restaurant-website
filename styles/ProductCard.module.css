@@ -1,0 +1,31 @@
+.container {
+  width: 22%;
+  margin: 1.7rem 1.1rem;
+  padding-top: 1rem;
+}
+.container:hover {
+  background-color: var(--aqua);
+  border-radius: 1rem;
+}
+.image {
+  cursor: pointer;
+}
+.productName {
+  color: var(--orange);
+  cursor: pointer;
+}
+.price {
+  color: var(--lightBlack);
+}
+.description {
+  color: var(--lighttBlack);
+  padding: 0 2rem;
+  font-size: 1.2rem;
+}
+@media screen and (max-width:480px) {
+  .container {
+    width: 100%;
+    margin: 0;
+  padding-top: 0;
+  }
+}

@@ -1,0 +1,42 @@
+.container {
+  height: calc(100vh - 100px);
+  background-color: var(--lightBlack);
+  display: flex;
+}
+.item {
+  position: relative;
+  display: flex;
+  flex: 1;
+}
+.item:last-child {
+  flex: 2;
+}
+.card {
+  color: var(--white);
+}
+.headerText {
+  color: var(--orange);
+}
+.card {
+  flex: 1;
+  padding: 3rem 4rem 0 2rem;
+}
+.cardDescription {
+  padding: 0.5rem 0;
+}
+@media screen and (max-width: 480px) {
+  .container {
+    height: 100%;
+  }
+  .item:first-child {
+    display: none;
+  }
+  .item {
+    flex-direction: column;
+  }
+  .card {
+    flex: 1;
+    padding: 0 0 2rem 2rem;
+  }
+  
+}

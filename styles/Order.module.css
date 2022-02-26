@@ -1,0 +1,108 @@
+.container {
+  display: flex;
+  padding: 2rem 1rem;
+}
+.left {
+  flex: 2;
+}
+.right {
+  flex: 1;
+}
+.card {
+  background: var(--lightBlack);
+  color: var(--white);
+  padding: 1rem 3.5rem;
+  max-width: 85%;
+  border-radius: 0.4rem;
+}
+.cardHeader {
+  text-transform: uppercase;
+}
+.cardItem {
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin: 0.2rem;
+}
+.span {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.cardButton {
+  margin: 1rem 0;
+  width: 100%;
+  text-transform: uppercase;
+  color: var(--green);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 0.4rem 0;
+  cursor: not-allowed;
+}
+.table {
+  width: 95%;
+  text-align: left;
+  padding-left: 3rem;
+}
+.iconContainer {
+  width: 75%;
+  text-align: left;
+  padding: 3rem 0 0 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.done{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inProgess{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: inProgres 1s  alternate ;
+}
+@keyframes inProges{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.undone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: .3;
+}
+
+.checked{
+padding-top: 0.5rem
+}
+
+@media screen and (max-width:480px) {
+  .container {
+flex-direction: column;
+    padding: 2rem 1rem;
+  }
+  .card {
+    background: var(--lightBlack);
+    color: var(--white);
+    padding: 1rem 2.5rem;
+    max-width: 100%;
+    border-radius: 0.4rem;
+  }
+  .table {
+    width: 100%;
+    text-align: left;
+    padding-left: 0;
+    font-size: 0.85rem;
+  }
+  .iconContainer {
+    width: 100%;
+    text-align: left;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}
